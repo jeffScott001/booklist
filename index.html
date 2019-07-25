@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header">
+          <i class="fas fa-book-open text-color"></i> My<span class="text-color"
+            >Book</span
+          >List
+        </h1>
+        <form id="book-form">
+          <div class="wrapper">
+            <div class="alert hidden" id="alert"></div>
+            <label for="#title">Title</label>
+            <input type="text" id="title" class="input title" />
+
+            <label for="#author">Author</label>
+            <input type="text" id="author" class="input author" />
+
+            <label for="#isbn">ISBN</label>
+            <input type="text" id="isbn" class="input isbn" />
+
+            <input type="submit" id="submit-book" class="btn" />
+          </div>
+        </form>
+        <div class="preview">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/be994c5cbf.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
